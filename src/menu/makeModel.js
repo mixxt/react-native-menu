@@ -1,5 +1,6 @@
 module.exports = (React) => {
-  const { shape, func } = React.PropTypes;
+  const PropTypes = require('prop-types');
+  const { shape, func } = PropTypes;
 
   const IMenuController = shape({
     open: func.isRequired,
@@ -10,4 +11,3 @@ module.exports = (React) => {
 
   return { IMenuController };
 };
-
